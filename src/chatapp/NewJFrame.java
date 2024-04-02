@@ -57,13 +57,19 @@ public class NewJFrame extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    admin adminForm = new admin();
+    client clientForm = new client();
+    boolean isClientFormVisible = false;
+
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
       
-          admin adminForm = new admin(); // Assuming 'admin' is your form class name
+    admin adminForm = new admin(); // Assuming 'admin' is your form class name
     adminForm.setVisible(true);
+    System.out.println("admin loaded");
     
     client clientForm = new client(); // Assuming 'client' is your form class name
     clientForm.setVisible(true);
+    System.out.println("client loaded");
         
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
